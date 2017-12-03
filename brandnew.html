@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Template Website </title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type ='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type ='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type ='text/css'>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type = "text/css">
+
+body 
+{
+	font-size: 62.5%;
+	font-family: arial, sans-serif;
+	position:relative;
+}
+
+h1 
+{
+	font-size:5em;
+	vertical-align: middle;
+	font-family: 'Arvo';
+
+	color:#191970;
+}
+h3
+{
+	font-size:0em;
+	text-align:center;
+	
+}
+h5
+{
+	font-size:2em;
+	font-family:'Pacifico',cursive;
+
+}
+
+h6
+{
+	font-size:3.5em;
+	font-weight:1000;
+	color:white;
+	font-style:bold;
+	font-family: 'Open Sans';
+
+}
+
+#section1
+{
+	font-family:'Open Sans';
+	position:relative;
+	
+	background-image: url('images/image7.jpg');
+    opacity:0.8;
+	color:black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+#section2
+{
+	
+	position:relative;
+	font-family:'Open Sans';
+	position:relative;
+
+	background-image: url('images/image8.jpg');
+    opacity:0.8;
+	color:black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#section3
+{
+	font-family:'Bitter';
+	position:relative;
+	background-image: url('images/image9.jpg');
+    opacity:0.8;
+	color:black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#websiteTitle
+{
+	font-family:'Pacifico', cursive;
+	font-size:8em;
+	vertical-align:middle;
+	text-align:center;
+
+}
+#websiteLogo
+{   
+	height:100px;
+	width:120px;
+	margin-left: 30%;
+}
+#websiteSlogan
+{
+	font-family: 'Arvo';
+	font-style:bold;
+	font-size:5em;
+	text-align: center;
+}
+.slide1
+{
+	height:150px;
+	width:200px;
+}
+.sectionContent
+{
+    display:none;
+}
+
+
+#tabtextcontent
+{
+	font-size:2em;
+
+}
+
+ img.s1im1
+ {
+
+ 	display:block;
+ 	margin-left:auto;
+ 	margin-right:auto;
+ 	height:20%;
+ 	width:20%;
+ }
+
+   
+  .affix {
+      top: 20px;
+      z-index: 9999 !important;
+  }
+  div.col-sm-9 div {
+      height: 250px;
+      font-size: 28px;
+  }
+
+    @media screen and (max-width: 810px) {
+    #section1, #section2, #section3  {
+        margin-left: 100px;
+    }
+  }
+
+
+</style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset:="15">
+
+ 	<!-- First Block -->
+	<div class ="container">
+  
+	  <span class ="pageheader">
+			
+			<img src="images/image1.jpg" id="websiteLogo" class="img-thumbnail" alt ="logo">
+			<span id="websiteTitle" > Website Title <!--<font size="10"> Website Name  </font>--></span>
+		    <p id="websiteSlogan"> Knowledge,power,innovation </p>
+	   </span>
+     </div>
+
+
+	 <!-- Carousel Slider -->
+	 <div id = "theCarousel" class ="carousel slide" data-ride="carousel">
+	 <ol class="carousel-indicators">
+	 <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+	  <li data-target="#theCarousel" data-slide-to="1" "></li>
+	   <li data-target="#theCarousel" data-slide-to="2"></li>
+	   </ol>
+
+	   <div class="carousel-inner"> 
+	  	 <div class="item active">
+	     <div class="slide1"> </div>
+	     <div class="carousel-caption">
+	     <h1> Welcome to the art gallery</h1>
+		</div>
+		</div>
+
+		<div class="item" >
+		<div class = "slide2"> <img src="images/image3.jpg" height="150" width="200" class="img-circle"> </div>
+		<div class="carousel-caption">
+		<h1> Explore art </h1>
+		</div>
+		</div>
+
+		<div class="item">
+		<div class = "slide3"> <img src="images/image4.jpg" height = "150" width= "200"  class="img-circle" ></div>
+		<div class="carousel-caption">
+		<h1>Sample text </h1>
+		</div>
+		</div>
+
+		</div>
+
+		<a class="left carousel-control" href="#theCarousel" data-slide="prev">
+		<span class= "glyphicon gylphicon-chevron-left">
+		</span>
+		<a class="right carousel-control" href="#theCarousel" data-slide="next">
+		<span class= "glyphicon gylphicon-chevron-right">
+		</span> 
+		</a>
+		</a>
+		</div>
+
+
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="50">
+   <div class="container-fluid">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+   <span class="icon-bar"> </span>
+   <span class="icon-bar"> </span>
+    <span class="icon-bar"> </span>
+  </button>
+   
+   
+  <div class ="collapse navbar-collapse" id="myNavbar"> 
+    <ul class ="nav nav-justified">
+    <li class="active"><a data-toggle="pill" data-toggle=".navbar-collapse" href="#home"> <h6> Home </h6></a></li>
+   
+    <li><a data-toggle="pill"  href="#menu1"> <h6> About Us </h6></a></li>
+
+    <li><a data-toggle="pill" href="#menu2"> <h6>  Contact Us  </h6></a></li>
+    <li><a data-toggle="pill" href="#menu3"><h6> Our Vision </h6></a></li>
+    </ul>
+ 
+  </div>
+ </div>
+ </nav></div>
+  </nav>
+  
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+
+<div class="container2">
+  <div class="row">
+    <nav class="col-sm-3" id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+        <li><a href="#section1"><h5> Section One</h5></a></li>
+         <li><a href="#section2"><h5> Section Two</h5></a></li>
+          <li><a href="#section3"><h5> Section Three</h5></a></li>
+       </ul>
+<script type="text/javascript">
+   $(document).on('click', '.nav-pills li', function() {
+       $(".nav-pills li").removeClass("active");
+       $(this).addClass("active");
+   });
+$(document).on('click', '.nav-pills li a', function(){
+$(".sectionContent").hide();
+        var myDiv = $(this).attr("href");
+        $(myDiv).show();
+    });
+ $(function(){ 
+     var navMain = $(".navbar-collapse");
+     navMain.on("click", "a:not([data-toggle])", null, function () {
+         navMain.collapse('hide');
+     });
+ });
+ </script>
+ </nav><div class="col-sm-9">
+      <div id="section1" class="sectionContent">    
+        <h6>Section 1</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna 
+            </p>
+      </div>
+      <div id="section2" class="sectionContent"> 
+        <h6>Section 2</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna 
+            </p>
+      </div>        
+      <div id="section3" class="sectionContent">
+        <h6>Section 3</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna 
+            </p>
+      </div>
+      </div>
+      </div>
+     
+      </div>
+    </div>
+ 
+   
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</body>
+</html>

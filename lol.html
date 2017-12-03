@@ -1,0 +1,86 @@
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="50">
+   <div class="container-fluid">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+   <span class="icon-bar"> </span>
+   <span class="icon-bar"> </span>
+    <span class="icon-bar"> </span>
+  </button>
+   
+   
+  <div class ="collapse navbar-collapse" id="myNavbar"> 
+    <ul class ="nav nav-justified">
+    <li class="active"><a data-toggle="pill" data-toggle=".navbar-collapse" href="#home"> <h6> Home </h6></a></li>
+   
+    <li><a data-toggle="pill"  href="#menu1"> <h6> About Us </h6></a></li>
+
+    <li><a data-toggle="pill" href="#menu2"> <h6>  Contact Us  </h6></a></li>
+    <li><a data-toggle="pill" href="#menu3"><h6> Our Vision </h6></a></li>
+    </ul>
+ 
+  </div>
+  </div>
+  </nav>
+  
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+
+<div class="container2">
+  <div class="row">
+    <nav class="col-sm-3" id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+        <li><a href="#section1"><h5> Section One</h5></a></li>
+         <li><a href="#section2"><h5> Section Two</h5></a></li>
+          <li><a href="#section3"><h5> Section Three</h5></a></li>
+       </ul>
+<script type="text/javascript">
+   $(document).on('click', '.nav-pills li', function() {
+       $(".nav-pills li").removeClass("active");
+       $(this).addClass("active");
+   });
+$(document).on('click', '.nav-pills li a', function(){
+$(".sectionContent").hide();
+        var myDiv = $(this).attr("href");
+        $(myDiv).show();
+    });
+</script>
+
+
+   
+    </nav>
+    <div class="col-sm-9">
+      <div id="section1" class="sectionContent">    
+        <h6>Section 1</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna 
+            </p>
+      </div>
+      <div id="section2" class="sectionContent"> 
+        <h6>Section 2</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna 
+            </p>
+      </div>        
+      <div id="section3" class="sectionContent">
+        <h6>Section 3</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna 
+            </p>
+      </div>
+      </div>
+      </div>
+     
+      </div>
+    </div>
+ 
+   
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
